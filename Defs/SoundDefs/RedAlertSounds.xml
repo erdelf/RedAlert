@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-SoundDef>
+  <SoundDef>
+    <defName>redAlertAlarm</defName>  
+    <label>ALARM</label>  
+    <description>It is an alarm</description> 
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>  
+        <onCamera>True</onCamera>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>base_alert</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>90</min>        
+          <max>100</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.5</min>        
+          <max>1.5</max>
+        </pitchRange>      
+        <distRange>
+          <min>152.6561</min>
+          <max>152.6561</max>
+        </distRange>      
+      </li>
+    </subSounds>
+  </SoundDef>
+</DefPackage-SoundDef>

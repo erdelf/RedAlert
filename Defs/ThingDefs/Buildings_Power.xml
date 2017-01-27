@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+  <ThingDef ParentName="BuildingBase">
+    <defName>AlertSwitch</defName>
+    <label>alert switch</label>
+    <thingClass>Building_AlertSwitch</thingClass>
+    <category>Building</category>
+    <description>Switches alarm on/off.</description>
+    <graphicData>
+      <texPath>GreenAlert</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <allowWireConnection>false</allowWireConnection>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>200</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <placingDraggableDimensions>0</placingDraggableDimensions>
+    <costList>
+      <Steel>15</Steel>
+      <Component>1</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <tickerType>Normal</tickerType>
+    <designationCategory>Power</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>Electricity</li>
+      <li>ColoredLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Buildings>
